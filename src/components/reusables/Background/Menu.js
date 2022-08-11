@@ -14,7 +14,7 @@ import Logo from "../../../assets/logo-white.png"
 
 
 //Gets the main page url:
-const mainURL = URL.getMainURL();
+const mainURL = URL.getDomain();
 
 export default function Menu() {
 
@@ -86,7 +86,6 @@ export default function Menu() {
 
     //Rendering:
     return (
-
         isOpen ? menuOpened : menuClosed
 
     )

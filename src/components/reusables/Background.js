@@ -18,14 +18,15 @@ export default function Background(props) {
             {/*The line below renders the Menu only if the "isMenu" prop is set to true to an instance of this component. This pattern can be found later */ }
             {props.isMenu && <Menu />}
             
-            <div id="background">
-
+            <div id="background" style={{position: props.position, ...props.style}} >
                 {props.isGif && gif}
                 {props.isImage && image}
                 {props.isAudio && <audio autoPlay loop >
                     <source src={Audio} type="audio/wav" />
                 </audio> }
 
+                
+                {props.children}
             </div>
 
         </>);

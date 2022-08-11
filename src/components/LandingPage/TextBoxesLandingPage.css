@@ -1,0 +1,12 @@
+.text-boxes-landing-page{
+    /* margin-top: 25vh; */
+
+     position: fixed; 
+    top: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center; 
+    transform: translate(0%,-50%);
+}

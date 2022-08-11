@@ -5,73 +5,76 @@
 
 
 import React from "react";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 
 import "./LandingPage.css"
 
 import Background from "./reusables/Background";
+import TextBoxexLandingPage from "./LandingPage/TextBoxesLandingPage";
+import Fill from "./reusables/Fill";
 
-import Gif from "../assets/ianua-background.gif";
-import Image from "../assets/background-black-overlay.png";
+import TextBoxesLandingPage from "./LandingPage/TextBoxesLandingPage";
+import TextBoxLandingPage from "./LandingPage/TextBoxesLandingPage/TextBoxLandingPage";
 
-import Sky1 from "../assets/1-sky-background.gif";
-import Clouds2 from "../assets/2-clouds.gif";
-import Logo3 from "../assets/3-large-logo.png";
-import Hills4 from "../assets/4-hills.png"
-import Trees5 from "../assets/5-trees-back-layer.png"
-import Trees6 from "../assets/6-trees-mid-layer.png"
-import Trees7 from "../assets/7-trees-front-layer.png"
-import Trees8 from "../assets/8-trees-foreground.png"
-import Mist9 from "../assets/9-mist-layer.png"
-
-import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
-
-import ParallaxEffect from "./reusables/ParallaxEffect";
+import FirstImage from "../assets/intro-background.jpg";
+import SkyGif from "../assets/1-sky-background.gif";
+import { ParallaxLayer } from "@react-spring/parallax";
 
 export default function LandingPage() {
 
-
+  const border = (<div style={{ height: "10px", width: "100%", background: "black", position: "relative" }}></div>)
 
   return (
-    <>
+    <div id="landing-page">
+      <ParallaxProvider>
+      <Background position={"relative"} isMenu={true} isImage={true} Image={FirstImage} />
 
-      <div style={{height:"300vh", width:"100%"}}>
-      <img src={Sky1} style={{height:"300vh", width:"100%"}}></img>
-      <ParallaxEffect src = {Clouds2} height={"100vh"} width="100%" speed={0.3}/>
-      <ParallaxEffect src = {Hills4} height={"100vh"} width="100%" speed={0.4}/>
-      <ParallaxEffect src = {Trees5} height={"100vh"} width="100%" speed={0.5}/>
-      <ParallaxEffect src = {Trees6} height={"100vh"} width="100%" speed={0.6}/>
-      <ParallaxEffect src = {Trees7} height={"100vh"} width="100%" speed={0.68}/>
-      <ParallaxEffect src = {Trees8} height={"100vh"} width="100%" speed={0.6}/>
+      {border}
+
+      <Background position={"relative"} isImage={true} Image={SkyGif} style={{overflowX:"hidden" }}>
+
+
+       {/* <ParallaxProvider>*/}
+        <Parallax translateX={["100vw", "-600vw"]} > 
+        <TextBoxexLandingPage numberOfBoxes={6} overflowX={"hidden"}> 
+          
+          {/* <div style ={{height:"25vh", width:"100%", position:"relative"}}></div> */}
+          
+          <TextBoxLandingPage></TextBoxLandingPage>
+          
+          
+          <TextBoxLandingPage></TextBoxLandingPage>
+
+          <TextBoxLandingPage></TextBoxLandingPage>
+
+          <TextBoxLandingPage></TextBoxLandingPage>
+
+          <TextBoxLandingPage></TextBoxLandingPage>
+
+          <TextBoxLandingPage></TextBoxLandingPage>
+
+        
+         
+
+        </TextBoxexLandingPage>
+         </Parallax>
+      {/* </ParallaxProvider> */}
       
-      </div>
+      
+      </Background>
 
-      <div style={{zIndex:10, height:"100vh", width:"100%", background:"red"} }></div>
-      <div style={{height:"100vh", width:"100%"}}></div>
+     
 
+      
 
-      {/* <div style={{ height: "100vh", width: "100%", background: "red" }}></div> */}
+      
 
-      {/* <ParallaxProvider>
-        <ParallaxBanner
-          layers={[
-            { image: Sky1, speed: -10 },
-            { image: Clouds2, speed: -9 },
-            { image: Hills4, speed: -1},
-            { image: Trees5, speed: -16 },
-            { image: Trees6, speed: -6 },
-            { image: Trees7, speed: -5 },
-          ]}
-          style={{ height: '100vh', width: '100%' }}
-        />
+      <Fill color={"aqua"} position={"relative"}/>
 
 
-
-      </ParallaxProvider> */}
-
-      <div style={{ height: "100vh", width: "100%", background: "none" }}></div>
-
-
-    </>
+      {/* <TextBoxexLandingPage/> */}
+      </ParallaxProvider>
+    </div>
 
   );
 
