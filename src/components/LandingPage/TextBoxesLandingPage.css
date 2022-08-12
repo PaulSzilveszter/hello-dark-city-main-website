@@ -1,6 +1,6 @@
 .text-boxes-landing-page{
     /* margin-top: 25vh; */
-
+    z-index: 10;
      position: fixed; 
     top: 50%;
     background-color: transparent;

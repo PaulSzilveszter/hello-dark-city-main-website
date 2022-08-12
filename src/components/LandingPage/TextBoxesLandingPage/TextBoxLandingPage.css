@@ -1,11 +1,25 @@
 .text-box-landing-page{
     /* top:50%; */
     /* position: absolute; */
+    padding: 10px;
     position: relative;
     width:50vw;
+    /* min-width: 300px; */
     margin-left:25vw;
     margin-right:25vw;
-    height: 50vh;
-    background-color: red;
+    height: auto;
+    min-height: 50vh;
+    background-color: black;
+
+    border-style: solid;
+    border-color:  white;
+}
+.text-box-landing-page *{
+    color: white;
+    position: relative;
+    height: auto;
+}
+.text-box-landing-page h1{
+    font-size: 2rem;
     
 }
