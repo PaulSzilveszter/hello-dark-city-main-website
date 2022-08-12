@@ -1,0 +1,45 @@
+#roadmap { position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url("../../assets/roadmap-background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#roadmap h1{
+    text-align: center;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    font-size: 3rem;
+    
+}
+.stage-description {
+    position: absolute;
+
+    /* background-color: red; */
+    height: auto;
+    width: 30%;
+
+}
+
+#roadmap-stage-1 {
+    top: 25%;
+    left: 5%
+}
+
+#roadmap-stage-2 {
+    top: 80%;
+    left: 15%;
+}
+
+#roadmap-stage-3 {
+    top: 30%;
+    left: 45%
+}
+
+#roadmap-stage-4 {
+    top: 75%;
+    left: 65%;
+}

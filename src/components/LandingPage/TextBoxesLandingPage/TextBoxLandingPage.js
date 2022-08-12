@@ -2,8 +2,8 @@ import "./TextBoxLandingPage.css"
 
 export default function TextBoxLandingPage(props){
 
-    return (<article className="text-box-landing-page">
+    return (<div className="text-box-landing-page-wrapper"><article className="text-box-landing-page">
             {props.children}
-    </article>)
+    </article></div>)
 
 }

@@ -15,6 +15,8 @@ import Fill from "./reusables/Fill";
 
 import TextBoxesLandingPage from "./LandingPage/TextBoxesLandingPage";
 import TextBoxLandingPage from "./LandingPage/TextBoxesLandingPage/TextBoxLandingPage";
+import Roadmap from "./LandingPage/Roadmap";
+import Whitepaper from "./LandingPage/Whitepaper";
 
 import FirstImage from "../assets/intro-background.jpg";
 import SkyGif from "../assets/1-sky-background.gif";
@@ -25,7 +27,7 @@ export default function LandingPage() {
   const border = (<div style={{ height: "1vh", width: "100%", background: "black", position: "relative" }}></div>)
 
 
-  const textBoxesParallaxStyle = { zIndex: 10, position: "fixed", height: "100vh", width: "100%", marginLeft: "100vw", marginRight: "100vw", top: "0", trasnsform: "translateY(-50%)" }
+  const textBoxesParallaxStyle = { zIndex: 10, position: "fixed", height: "100vh", width: "100%", marginLeft: "100vw", marginRight: "0vw", top: "0", trasnsform: "translateY(-50%)" }
 
   return (
     <div id="landing-page">
@@ -33,7 +35,7 @@ export default function LandingPage() {
 
 
         <Parallax style={textBoxesParallaxStyle} translateX={["700vw", "-700vw"]} >
-          <TextBoxexLandingPage numberOfBoxes={7} overflowX={"hidden"}>
+          <TextBoxexLandingPage numberOfBoxes={6} overflowX={"hidden"}>
 
 
 
@@ -88,13 +90,11 @@ export default function LandingPage() {
         </Background>
 
 
+        <Roadmap/>
+        <Whitepaper/>
 
 
-
-        <Fill color={"black"} position={"relative"} />
-
-        <Fill color={"aqua"} position={"relative"} />
-        sss
+        
 
 
       </ParallaxProvider>

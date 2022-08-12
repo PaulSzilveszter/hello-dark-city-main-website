@@ -1,14 +1,23 @@
+.text-box-landing-page-wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
 .text-box-landing-page{
     /* top:50%; */
     /* position: absolute; */
     padding: 10px;
     position: relative;
-    width:50vw;
+    width:clamp(45ch, 50% , 70ch);
     /* min-width: 300px; */
-    margin-left:25vw;
-    margin-right:25vw;
+    
     height: auto;
-    min-height: 50vh;
+    min-height: 30vh;
     background-color: black;
 
     border-style: solid;
