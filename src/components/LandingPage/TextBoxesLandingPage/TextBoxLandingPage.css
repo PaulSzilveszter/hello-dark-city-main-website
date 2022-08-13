@@ -13,13 +13,17 @@
     /* position: absolute; */
     padding: 10px;
     position: relative;
-    width:clamp(45ch, 50% , 70ch);
+    width:clamp(25ch, 50% , 35ch);
     /* min-width: 300px; */
+    margin-bottom: 200px;
     
     height: auto;
     min-height: 30vh;
-    background-color: black;
 
+    background-color: rgb(21, 12, 31);
+
+
+    border-radius: 16px;
     border-style: solid;
     border-color:  white;
 }

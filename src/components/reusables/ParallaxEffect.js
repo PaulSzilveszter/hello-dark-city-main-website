@@ -12,7 +12,7 @@ export default function ParallaxEffect(props) {
 
     return (
         <>
-            <img src={props.src} style={{zIndex:1, position:"absolute", bottom:0, left:0, height: props.height, width: props.width, transform: `translateY(${offsetY * props.speed}px)` }} alt="" />
+            <img src={props.src} style={{ position:"absolute", bottom:0, left:0, height: props.height, width: props.width, transform: `translateY(${offsetY * props.speed}px)` }} alt="" />
         </>
     )
 }
