@@ -24,6 +24,8 @@ import TextBoxesLandingPage from "./LandingPage/TextBoxesLandingPage";
 import TextBoxLandingPage from "./LandingPage/TextBoxesLandingPage/TextBoxLandingPage";
 import ParallaxEffect from "./reusables/ParallaxEffect";
 import Fill from "./reusables/Fill";
+import Roadmap from "./LandingPage/Roadmap.js";
+import Whitepaper from "./LandingPage/Whitepaper";
 
 
 export default function LandingPage() {
@@ -85,6 +87,8 @@ export default function LandingPage() {
 
       </Background>
       
+      <Roadmap/>
+      <Whitepaper/>
       
     </div>
 
