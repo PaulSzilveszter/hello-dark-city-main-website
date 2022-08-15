@@ -26,17 +26,18 @@ import ParallaxEffect from "./reusables/ParallaxEffect";
 import Fill from "./reusables/Fill";
 import Roadmap from "./LandingPage/Roadmap.js";
 import Whitepaper from "./LandingPage/Whitepaper";
+import TypewriterEffect from "./reusables/TypewriterEffect";
 
 
 export default function LandingPage() {
 
   const logo  = (<div style={{height:"100vh", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
 
-    <img style={{position:"relative",top:"0vh", height:"min(60vw, 60vh)", width:"min(60vw, 60vh)"}} src={Logo3}></img>
+    <img style={{position:"relative",top:"0vh", height:"min(60vw, 60vh)", width:"min(60vw, 60vh)"}} src={Logo3} alt = ""></img>
     
     </div>)
 
-
+    const landingPageEffect = (<div style={{position:"absolute",background:"transparent", height:"5vh", width:"60%",textAlign:"center", fontSize:"2.5rem", top:"90%", zIndex:"100", left:"50%", transform:"translateX(-50%)"}}><TypewriterEffect speed={100} message={"Welcome to the Dark City!"}/></div>)
 
   return (
     <div id="landing-page">
@@ -44,6 +45,7 @@ export default function LandingPage() {
       {/* <Background height={"100vh"} width={"100%"} isImage = {true} Image = {IntroBackground}></Background> */}
       <Background height={"auto"} width={"100%"} isImage={true} Image={Sky1}>
 
+      {landingPageEffect}
 
         <ParallaxEffect src={Clouds2} height={"100vh"} width="100%" speed={-0.4} />
         <ParallaxEffect src={Hills4} height={"100vh"} width="100%" speed={1.7} />
@@ -76,7 +78,6 @@ export default function LandingPage() {
               THIS WHERE OUR JOURNEY BEGINS, Welcome to DARK CITY <br />
               Any-thoughts on the website copy, is meant to be a small pitch of the brand, will include extra parts for team & roadmap
             </p></TextBoxLandingPage>
-
         </div>
 
 
@@ -84,6 +85,7 @@ export default function LandingPage() {
         <ParallaxEffect src={Trees7} height={"100vh"} width="100%" speed={1.2} />
         <ParallaxEffect src={Trees8} height={"100vh"} width="100%" speed={1.1} />
 
+        
 
       </Background>
       
