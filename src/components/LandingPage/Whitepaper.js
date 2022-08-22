@@ -11,21 +11,21 @@ export default function Whitepaper(props) {
 
                 <section id="whitepaper">
                     {/* <a id = "whitepaper-download-button" download="HelloDarkCity-Whitepaper.pdf" href="../../downloadable/Whitepaper.pdf" >Download the Whitepaper</a> */}
-                    <footer id="whitepaper-footer">
+                    <footer id="whitepaper-text">
                         GOODBYE FOR NOW, TRAVELER!<br />
-                        FIND OUT MORE INFORMATION BY READING OUR <a id = "whitepaper-download-button" download="HelloDarkCity-Whitepaper.pdf" href="../../downloadable/Whitepaper.pdf" >WHITEPAPER</a>
+                        FIND OUT MORE INFORMATION BY READING OUR <a id="whitepaper-download-button" download="HelloDarkCity-Whitepaper.pdf" href="../../downloadable/Whitepaper.pdf" >WHITEPAPER</a>
                     </footer>
-                    
-                    
-                    
-                    <div id ="whitepaper-social-media-buttons-wrapper">
 
-                    <a className="whitepaper-social-media-button" href="">
-                        <FaTwitter />
-                    </a>
-                    <a className="whitepaper-social-media-button" href="">
-                        <FaDiscord />
-                    </a>
+
+
+                    <div id="whitepaper-social-media-buttons-wrapper">
+
+                        <a className="whitepaper-social-media-button" target="_blank" href="https://twitter.com/helloDARKCITY" rel="noreferrer">
+                            <FaTwitter />
+                        </a>
+                        <a className="whitepaper-social-media-button" target="_blank" href="https://discord.gg/ABAvjWVkR5" rel="noreferrer">
+                            <FaDiscord />
+                        </a>
 
                     </div>
 

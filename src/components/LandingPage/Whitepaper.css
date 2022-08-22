@@ -1,7 +1,9 @@
 #whitepaper{
-    
+    background-image: url("../../assets/ianua-background.gif");
+    background-size: cover;
+    background-position: center;
     position: relative;
-    height: 30vh;
+    height: 100vh;
     width: 100%;
     background-color: grey;
 
@@ -11,25 +13,33 @@
     align-items: center;
 }
 #whitepaper *{
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
-#whitepaper-footer{
-    
+#whitepaper-text{
+    font-size: 1.7rem;
+    margin: 15px;
     text-align: center;
     /* color:red */
 }
 #whitepaper-social-media-buttons-wrapper{
+    height: 60px;
+margin-bottom: 20px;
+    position: absolute;
+    bottom: 5vh;
+    right:6vw;
     display: flex;
     flex-direction: row;
     
 }
 .whitepaper-social-media-button {
-    margin: 10px;
+    font-size: 2rem;
+    margin: 20px;
 }
 .whitepaper-social-media-button :hover{
     color: var(--dark-city-green);
 }
 a#whitepaper-download-button{
+    font-size: 1.7rem;
     color:white;
 }
 a#whitepaper-download-button:hover{

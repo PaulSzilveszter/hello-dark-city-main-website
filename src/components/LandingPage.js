@@ -37,7 +37,7 @@ export default function LandingPage() {
     
     </div>)
 
-    const landingPageEffect = (<div style={{position:"absolute",background:"transparent", height:"5vh", width:"60%",textAlign:"center", fontSize:"2.5rem", top:"90%", zIndex:"100", left:"50%", transform:"translateX(-50%)"}}><TypewriterEffect speed={100} message={"Welcome to the Dark City!"}/></div>)
+    const landingPageEffect = (<div style={{position:"absolute",background:"transparent", height:"5vh", width:"60%",textAlign:"center", fontSize:"1.5rem", top:"90%", zIndex:"100", left:"50%", transform:"translateX(-50%)"}}><TypewriterEffect speed={100} message={"Welcome to the Dark City!"}/></div>)
 
   return (
     <div id="landing-page">
